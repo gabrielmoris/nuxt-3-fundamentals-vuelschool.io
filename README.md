@@ -1,15 +1,23 @@
 # Vue School Notes
 
 ## Add new page
- `npx nuxi add page <pagename>`
 
+`npx nuxi add page <pagename>`
 
+## Use async Data to retrieve from apis
 
+The first argument is an unique id ror the caching and the second a callback with the actual function
 
+```
+const { data } = useAsyncData(`/movies/${route.params.id}`, () => {
+  return $fetch(`http://www.omdbapi.com/?apikey--------&i=${route.params.id}`);
+});
 
+```
 
+## Add Middleware
 
-
+`npx nuxi add middleware`
 
 # Nuxt 3 Minimal Starter
 

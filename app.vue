@@ -1,11 +1,16 @@
 <template>
   <div>
-    <nav>
-      <NuxtLink to="/">Home</NuxtLink>
-      <NuxtLink to="/movies/MovieID123">Movies</NuxtLink>
-      <NuxtLink to="/teams/Team-green/users/65465">Teams</NuxtLink>
-      <NuxtLink target="_blank" to="https://www.gabrielcmoris.com">My Website</NuxtLink>
-    </nav>
-    <NuxtPage />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
+
+<script setup>
+//https://nuxt.com/docs/api/composables/use-head
+useHead({
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk} - My Movies Site` : "My Movies Site";
+  },
+});
+</script>

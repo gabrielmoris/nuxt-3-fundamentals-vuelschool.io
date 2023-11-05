@@ -1,3 +1,3 @@
 <template>
-  <MovieSearch />
+  <slot></slot>
 </template>
