@@ -19,6 +19,7 @@ export default defineNuxtConfig({
   // alias: {
   //   pinia: "/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs",
   // },
+  //https://nuxt.com/docs/guide/concepts/rendering#hybrid-rendering
   routeRules: {
     "/spa": { ssr: false },
     "/static": { static: true },
