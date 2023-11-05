@@ -7,7 +7,7 @@
 <script setup>
 const route = useRoute();
 // https://nuxt.com/docs/api/composables/use-fetch#params
-const { data } = await useFetch(`http://www.omdbapi.com/?apikey=6bc396b1&i=${route.params.id}`, {
+const { data } = await useFetch(`https://www.omdbapi.com/?apikey=6bc396b1&i=${route.params.id}`, {
   pick: ["Plot", "Title", "Error", "Poster"],
   key: `/movies/${route.params.id}`,
 });

@@ -7,6 +7,10 @@
     <NuxtLink to="/movies">Movies</NuxtLink>
     <NuxtLink to="/teams/Team-green/users/65465">Teams</NuxtLink>
     <NuxtLink target="_blank" to="https://www.gabrielcmoris.com">My Website</NuxtLink>
+    <NuxtLink to="/spa">SPA</NuxtLink>
+    <NuxtLink to="/ssr">SSR</NuxtLink>
+    <NuxtLink to="/static">Static</NuxtLink>
+    <NuxtLink to="/swr">SWR</NuxtLink>
   </nav>
   <slot></slot>
 </template>
@@ -18,4 +22,8 @@ const user = useuser();
 // const isLoggedIn = useIsloggedIn();
 </script>
 
-<style scoped></style>
+<style scoped>
+nav * {
+  margin: 0 20px;
+}
+</style>

@@ -10,7 +10,7 @@ The first argument is an unique id ror the caching and the second a callback wit
 
 ```
 const { data } = useAsyncData(`/movies/${route.params.id}`, () => {
-  return $fetch(`http://www.omdbapi.com/?apikey--------&i=${route.params.id}`);
+  return $fetch(`https://www.omdbapi.com/?apikey--------&i=${route.params.id}`);
 });
 
 ```
